@@ -110,6 +110,10 @@ body {
   padding: 6rem 1rem;
 }
 
+h2{
+  text-align: center;
+}
+
 #projects h2 {
   border-bottom: 0.1rem solid var(--main-white);
   font-family: "Raleway", sans-serif;
