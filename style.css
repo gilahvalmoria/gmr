@@ -103,6 +103,12 @@ body {
 
 
 }
+
+#bg-career {
+  background: linear-gradient(62deg, #45567d 0%, #45567d 100%);
+
+
+}
 #projects {
   width: 100%;
   background-color: var(--main-blue);
