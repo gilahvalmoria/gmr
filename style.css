@@ -104,3 +104,196 @@ body {
   font-weight: 200;
   font-style: italic;
 }
+
+
+
+
+#projects {
+  width: 100%;
+  background-color: var(--main-blue);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+#projects h2 {
+  border-bottom: 0.1rem solid var(--main-white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 4rem auto;
+}
+
+.projectsholder {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.projectsholder a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.project-tile {
+  width: 90%;
+  height: 300px;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.project-tile img {
+  max-width: 100%;
+}
+
+.project-tile .title {
+  width: 100%;
+  height: calc(300px - 237.33px);
+  background-color: var(--main-gray);
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile span {
+  color: red;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.project-tile:hover span {
+  opacity: 1;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 3rem 0 0 0;
+  font-size: 20px;
+  background-color: var(--main-gray);
+  border: none;
+  outline: none;
+  color: var(--main-white);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:hover i {
+  margin-left: 1rem;
+}
+
+
+
+
+@media (max-width: 769px) {
+  #navbar {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header #navbar ul {
+    width: 100%;
+  }
+
+  #welcome-section {
+    height: 100vh;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+
+  #projects {
+    width: 100%;
+    background-color: var(--main-gray);
+    text-align: center;
+    padding: 6rem 1rem;
+  }
+
+  #projects h2 {
+    border-bottom: 0.1rem solid var(--main-white);
+    margin: 0 auto 4rem auto;
+    font-size: 18px;
+  }
+
+  .projectsholder {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .project-tile {
+    width: 95%;
+    height: 230px;
+  }
+
+  .project-tile .title {
+    font-size: 16px;
+  }
+  
+}
+
+
+
+@media (max-width: 426px) {
+  #navbar {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header #navbar ul {
+    width: 100%;
+  }
+
+  #welcome-section {
+    height: 100vh;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+
+  #projects {
+    width: 100%;
+    background-color: var(--main-blue);
+    text-align: center;
+    padding: 6rem 1rem;
+  }
+
+  #projects h2 {
+    border-bottom: 0.1rem solid var(--main-white);
+    margin: 0 auto 4rem auto;
+    font-size: 18px;
+  }
+
+  .projectsholder {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .project-tile {
+    width: 95%;
+    height: 230px;
+  }
+
+  .project-tile .title {
+    font-size: 16px;
+  }
+
+}
